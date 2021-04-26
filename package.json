@@ -1,6 +1,13 @@
 {
   "name": "rails-6-svelte",
   "private": true,
+  "scripts": {
+    "dev": "rails server",
+    "test": "npx eslint '**/*.js' --quiet",
+    "fix": "npx eslint --fix \"{,!(node_modules|public)/**/}*.{js,svelte}\"",
+    "format": "npx prettier --write \"{,!(node_modules|public)/**/}*.{js,svelte}\"",
+    "validate": "npx svelte-check"
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
