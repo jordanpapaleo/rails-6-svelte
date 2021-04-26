@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const app = new App({
     target: document.body,
     props: {
-      name: 'Svelte'
-    }
+      name: 'Svelte',
+    },
   })
 
   window.app = app
