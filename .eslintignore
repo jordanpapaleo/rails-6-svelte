@@ -2,3 +2,5 @@ public
 node_modules
 tmp
 lib
+config/webpack/loaders/svelte.js
+.eslintrc.js

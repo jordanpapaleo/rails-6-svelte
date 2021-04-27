@@ -5,7 +5,12 @@ module.exports = {
       loader: 'svelte-loader',
       options: {
         hotReload: false,
-        preprocess: require('svelte-preprocess')({}),
+        preprocess: require('svelte-preprocess')({
+          // ...svelte-preprocess options
+          aliases: [
+            ['ts', 'typescript'],
+          ],
+        }),
       },
     },
   ],
